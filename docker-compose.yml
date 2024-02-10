@@ -9,6 +9,8 @@ services:
       - ./iwing-iot-frontend/.env.production
     networks:
       - iwing
+    depends_on:
+      - backend
 
   backend:
     build:
